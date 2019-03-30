@@ -28,8 +28,5 @@ namespace Snake
             return new Point(x, y, sym);
         }
 
-
-
-
     }
 }

@@ -15,10 +15,10 @@ namespace Snake
 
         public Point() { }
 
-        public Point(int _x, int _y, char _sym)
-        {   x = _x;
-            y = _y;
-            sym = _sym;
+        public Point(int x, int y, char sym)
+        {   this.x = x;
+            this.y = y;
+            this.sym = sym;
         }
         
         public Point(Point p)
@@ -50,7 +50,7 @@ namespace Snake
 
         public void Draw()
         {
-            --Console.SetCursorPosition(x, y);
+            Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
         
